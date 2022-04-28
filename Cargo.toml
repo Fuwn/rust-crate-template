@@ -1,0 +1,15 @@
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package]
+name = "rust-crate-template"
+version = "0.1.0"
+authors = ["Fuwn <contact@fuwn.me>"]
+edition = "2021"
+description = "A Rust crate template"
+documentation = "https://docs.rs/rust-crate-template"
+readme = "README.md"
+homepage = "https://github.com/Fuwn/rust-crate-template"
+repository = "https://github.com/Fuwn/rust-crate-template"
+license = "GPL-3.0-only"
+keywords = ["crate"]
+categories = ["development-tools"]

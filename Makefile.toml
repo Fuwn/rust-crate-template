@@ -1,0 +1,41 @@
+# ------------
+# | Wrappers |
+# ------------
+[tasks.fmt]
+command = "cargo"
+args = ["fmt"]
+private = true
+
+[tasks.check]
+command = "cargo"
+args = ["check"]
+private = true
+
+[tasks.clippy]
+command = "cargo"
+args = ["clippy"]
+private = true
+
+# -------------
+# | Executors |
+# -------------
+[tasks.checkf]
+dependencies = ["fmt", "check"]
+
+[tasks.checkfc]
+dependencies = ["fmt", "check", "clippy"]
+
+[tasks.test]
+dependencies = ["checkfc"]
+command = "cargo"
+args = ["test"]
+
+[tasks.docs]
+workspace = false
+toolchain = "nightly"
+command = "cargo"
+args = ["doc", "--open", "--no-deps"]
+
+[tasks.run]
+command = "cargo"
+args = ["run", "--example", "rust_crate_template"]
