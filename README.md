@@ -8,13 +8,17 @@ Rust Crate Template is a Rust crate template.
 
 ## Usage
 
+> Using this as a template? Try
+> `cargo generate --git https://github.com/Fuwn/rust-crate-template` with
+> [`cargo-generate`](https://github.com/cargo-generate/cargo-generate)!
+
 ### Add Rust Crate Template as a dependency
 
 ```toml
 # Cargo.toml
 
 [dependencies]
-rust-crate-template = "0.1.0"
+rust-crate-template = "0.1.1"
 ```
 
 ## Examples
